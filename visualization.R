@@ -10,6 +10,6 @@ data_p$Year <- as.factor(data_p$Year)
 
 fig <- plot_ly(data_p, x=~Month, y=~Death, color=~Year,
                mode = 'lines+markers') %>% 
-        layout(title="Total Death by Month in Japan",
+        layout(title="Total Death by Month in Japan \n source: 人口動態統計",
                legend=list(traceorder="reversed"))
 fig
